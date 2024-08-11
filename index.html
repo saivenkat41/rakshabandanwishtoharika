@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raksha Bandhan letter</title>
+    <!-- style sheet -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Tab icon -->
+    <link rel="icon" href="../img/CJM.png">
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+	<br>
+	<br>
+   <center> <img src="./img/chellipic.png" height="100px" width="100px" style="border-radius: 100%;">
+<h2>Happy Raksha Bandhan ra Chelli Love You Maa❤️🫂</h2></center>
+    <header>
+        <!--<img id="banner" src="img/banner.avif" height="200px" width="600px" alt="banner">-->
+		<center><h2>Chelli Once Lick On Love Symbol chelli⬇️</h2></center>
+    </header>
+    <span id="items">
+        <img id="rightwing" src="img/rightwing.png" alt="wing">
+        <img id="leftwing" src="img/leftwing.png" alt="wing">
+        <span id="letter">
+            <a href="loading.html"><img id="heart" src="img/heart.png" alt="heart"></a>
+            <img id="envelope" src="img/envelop.png" alt="letter">
+        </span>
+    </span>
+
+    <script>
+        // Function to trigger confetti blasts from both sides
+        function triggerConfetti() {
+            // Confetti from the left side
+            confetti({
+                particleCount: 150,
+                angle: 60,
+                spread: 70,
+                origin: { x: 0 }
+            });
+
+            // Confetti from the right side
+            confetti({
+                particleCount: 150,
+                angle: 120,
+                spread: 70,
+                origin: { x: 1 }
+            });
+        }
+
+        // Automatically trigger confetti when the page loads
+        window.onload = function() {
+            triggerConfetti();
+
+            // Repeat confetti blast every 3 seconds (3000 milliseconds)
+            setInterval(triggerConfetti, 3000);
+        };
+    </script>
+</body>
+</html>
